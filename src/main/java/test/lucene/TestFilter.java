@@ -19,16 +19,12 @@ import java.io.IOException;
 /**
  * IndexSearcher.
  * public TopDocs search(Query query, Filter filter, int n)
- * public TopFieldDocs search(Query query, Filter filter, int n,
- Sort sort)
+ * public TopFieldDocs search(Query query, Filter filter, int n, Sort sort)
  * Created by qinbin on 2015/10/23.
  */
 public class TestFilter {
     Directory dir;
-    @BeforeClass
-    public static void testBeforeClass() {
-        System.out.println("before class");
-    }
+
     @Before
     public void setup() throws IOException {
         dir = new RAMDirectory();

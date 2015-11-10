@@ -15,10 +15,12 @@ import org.junit.*;
 import java.io.IOException;
 
 /**
+ * 自定义Sort,使用SortField，重定义FieldComparatorSource
  * IndexSearcher.
  * public TopFieldDocs search(Query query, Filter filter, int n, Sort sort)
  * new Sort(new SortField):
  * public SortField(String field, FieldComparatorSource comparator)
+ *
  * Created by qinbin on 2015/10/27.
  */
 public class TestCustomSort {
